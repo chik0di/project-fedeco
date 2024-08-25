@@ -56,4 +56,39 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="staff_id" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="f6230d98-db42-472d-9287-ec7d4e77985c" ChangeDateTime="08/25/2024 18:34:53">
+    <Property Name="ElementName" Value="[dbo].[teaching_staff].[first_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[teaching_staff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="staff_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d86f03c3-0850-45fd-8129-c046ef140902" ChangeDateTime="08/25/2024 18:43:36">
+    <Property Name="ElementName" Value="[dbo].[non_teaching_staff].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[non_teaching_staff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="b93088d2-ed01-4b29-833b-3de296934792" ChangeDateTime="08/25/2024 18:43:47">
+    <Property Name="ElementName" Value="[dbo].[non_teaching_staff].[first_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[non_teaching_staff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="staff_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="cc394f6d-226e-4b50-b3d4-be921a26065d" ChangeDateTime="08/25/2024 18:44:46">
+    <Property Name="ElementName" Value="[dbo].[non_teaching_staff].[non_teaching_staff_department_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[non_teaching_staff]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="department_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="5390bcfe-e126-4c55-bff3-742ccfd451dd" ChangeDateTime="08/25/2024 18:55:27">
+    <Property Name="ElementName" Value="[dbo].[non_academic_staff_member].[first_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[non_academic_staff_member]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="staff_id" />
+  </Operation>
 </Operations>
