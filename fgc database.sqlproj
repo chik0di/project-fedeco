@@ -67,6 +67,7 @@
     <Build Include="non_teaching_staff_department.sql" />
     <Build Include="non_teaching_staff.sql" />
     <Build Include="hostel.sql" />
+    <Build Include="staff.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
