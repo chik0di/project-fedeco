@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[non_academic_staff_member]
+﻿CREATE TABLE [dbo].[non_academic_staff]
 (
 	[id] INT NOT NULL PRIMARY KEY, 
     [staff_id] VARCHAR(50) NOT NULL, 
