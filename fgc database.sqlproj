@@ -70,6 +70,7 @@
     <Build Include="administrative_roles.sql" />
     <Build Include="class.sql" />
     <Build Include="term.sql" />
+    <Build Include="class_sub_division.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
