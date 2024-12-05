@@ -36,7 +36,7 @@ INSERT INTO subject_department
 name
 )
 VALUES
-('Languages'), ('Sciences'), ('Commercial'),
+('Languages'), ('Sciences'), ('Commercial'), ('Social Sciences'),
 ('Arts'), ('Vocational'), ('Engineering');
 
 
