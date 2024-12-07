@@ -59,7 +59,6 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="subject.sql" />
-    <Build Include="academic_staff_type.sql" />
     <Build Include="non_academic_staff_department.sql" />
     <Build Include="subject_department.sql" />
     <Build Include="teaching_staff.sql" />
@@ -71,6 +70,10 @@
     <Build Include="class.sql" />
     <Build Include="term.sql" />
     <Build Include="class_sub_division.sql" />
+    <Build Include="non_academic_staff_member.sql" />
+    <Build Include="student.sql" />
+    <Build Include="student_class.sql" />
+    <Build Include="student_performance.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
