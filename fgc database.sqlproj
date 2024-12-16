@@ -74,6 +74,8 @@
     <Build Include="student.sql" />
     <Build Include="student_class.sql" />
     <Build Include="student_performance.sql" />
+    <Build Include="student_type.sql" />
+    <Build Include="academic_year.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
