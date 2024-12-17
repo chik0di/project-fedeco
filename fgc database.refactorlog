@@ -126,4 +126,67 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="id" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="94589ac0-cc81-4f49-809d-570c191db861" ChangeDateTime="12/07/2024 16:04:07">
+    <Property Name="ElementName" Value="[dbo].[student].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="57d20fe2-55ef-4664-a700-8ed85617eac9" ChangeDateTime="12/07/2024 16:05:00">
+    <Property Name="ElementName" Value="[dbo].[student].[last_name]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="middle_name" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="9abc7957-1669-458c-a01e-cb448431dd55" ChangeDateTime="12/07/2024 16:40:19">
+    <Property Name="ElementName" Value="[dbo].[student_class].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student_class]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="student_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="446d7509-71ed-480d-8317-1514945bcbd9" ChangeDateTime="12/07/2024 16:49:49">
+    <Property Name="ElementName" Value="[dbo].[student].[id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="student_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="d60675e9-9f1c-4f6e-b983-c0a4221ec5de" ChangeDateTime="12/07/2024 18:19:15">
+    <Property Name="ElementName" Value="[dbo].[subject].[id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[subject]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="subject_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="6c8ec6c5-325e-4713-bdb1-4c6f2b7e1483" ChangeDateTime="12/16/2024 15:38:52">
+    <Property Name="ElementName" Value="[dbo].[student].[student_type]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="student_type_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="73db86e9-ac06-46aa-ab60-06a80c42e45a" ChangeDateTime="12/16/2024 15:47:48">
+    <Property Name="ElementName" Value="[dbo].[student].[date_of_enrolment]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[student]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="academic_year_of_admission" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="bf362df8-a515-4d24-8da5-75f393cafbce" ChangeDateTime="12/17/2024 22:39:46">
+    <Property Name="ElementName" Value="[dbo].[states].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[states]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="dc84078f-4f17-4716-a3f4-e6a05f638c6d" ChangeDateTime="12/17/2024 22:45:21">
+    <Property Name="ElementName" Value="[dbo].[local_government_area].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[local_government_area]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
 </Operations>
