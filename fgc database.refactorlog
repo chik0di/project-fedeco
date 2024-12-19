@@ -189,4 +189,32 @@
     <Property Name="ParentElementType" Value="SqlTable" />
     <Property Name="NewName" Value="id" />
   </Operation>
+  <Operation Name="Rename Refactor" Key="deaca19c-cdc6-41a1-891c-9d296b424641" ChangeDateTime="12/18/2024 15:02:13">
+    <Property Name="ElementName" Value="[dbo].[school].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[school]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="school_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="0f762b69-1085-4391-9b91-a797c453430d" ChangeDateTime="12/18/2024 15:04:30">
+    <Property Name="ElementName" Value="[dbo].[school].[state]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[school]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="state_id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="91086906-7da9-4e34-9087-69866065c49e" ChangeDateTime="12/18/2024 22:15:24">
+    <Property Name="ElementName" Value="[dbo].[school_type].[Id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[school_type]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="id" />
+  </Operation>
+  <Operation Name="Rename Refactor" Key="7c524c56-94a2-4d83-96da-f0ef6a4c0ac6" ChangeDateTime="12/18/2024 23:30:25">
+    <Property Name="ElementName" Value="[dbo].[school].[state_id]" />
+    <Property Name="ElementType" Value="SqlSimpleColumn" />
+    <Property Name="ParentElementName" Value="[dbo].[school]" />
+    <Property Name="ParentElementType" Value="SqlTable" />
+    <Property Name="NewName" Value="state" />
+  </Operation>
 </Operations>
