@@ -78,6 +78,8 @@
     <Build Include="academic_year.sql" />
     <Build Include="state.sql" />
     <Build Include="local_government_area.sql" />
+    <Build Include="school.sql" />
+    <Build Include="school_gender_type.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
