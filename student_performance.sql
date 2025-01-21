@@ -1,6 +1,6 @@
 ﻿CREATE TABLE [dbo].[student_performance]
-(
-	[id] INT NOT NULL, 
+    (
+	[id] INT PRIMARY KEY IDENTITY(1,1) NOT NULL, 
     [student_id] VARCHAR(30) NOT NULL, 
     [class_division_id] INT NOT NULL, 
     [term_id] INT NOT NULL, 
@@ -15,4 +15,4 @@
     CONSTRAINT [FK_student_performance_term] FOREIGN KEY ([term_id]) REFERENCES [term]([term_id]), 
     CONSTRAINT [FK_student_performance_class_division] FOREIGN KEY ([class_division_id]) REFERENCES [class_sub_division]([id]), 
     CONSTRAINT [FK_student_performance_subject] FOREIGN KEY ([subject_id]) REFERENCES [subject]([subject_id])
-)
+    )
