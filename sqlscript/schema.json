@@ -2,7 +2,7 @@
 	"name": "schema",
 	"properties": {
 		"content": {
-			"query": "-- creating a dimension, School  \nCREATE TABLE dimSchool(\n    school_id INT,\n    full_name VARCHAR(200),\n    display_name VARCHAR(199),\n    school_type VARCHAR(20),\n    state VARCHAR(20),\n    school_website VARCHAR(50)\n);\n\n-- Loading into dimSchool from the Data Lake Gen 2 File System \nCOPY INTO dbo.dimSchool\nFROM 'https://fgcdatalake.blob.core.windows.net/fgcgen2filesystem/All FGCs in Nigeria - Silver Layer.csv'\nWITH (\n    FILE_TYPE = 'CSV',\n    FIRSTROW = 2,  -- Skips header row\n    FIELDTERMINATOR = ',',\n    ROWTERMINATOR = '\\n'\n);\n\nSELECT * FROM dimSchool\n",
+			"query": "-- creating a dimension, School  \nCREATE TABLE dimSchool(\n    school_id INT,\n    full_name VARCHAR(200),\n    display_name VARCHAR(199),\n    school_type VARCHAR(20),\n    state VARCHAR(20),\n    school_website VARCHAR(50)\n);\n\n-- Loading into dimSchool from the Data Lake Gen 2 File System \nCOPY INTO dbo.dimSchool\nFROM 'https://fgcdatalake.blob.core.windows.net/fgcgen2filesystem/All FGCs in Nigeria - Silver Layer.csv'\nWITH (\n    FILE_TYPE = 'CSV',\n    FIRSTROW = 2,  -- Skips header row\n    FIELDTERMINATOR = ',',\n    ROWTERMINATOR = '\\n'\n);\n\n\n-- creating a dimension, Subject\nCREATE TABLE dimSubject(\n    subject_id INT,\n    subject_name VARCHAR(200),\n    subject_department VARCHAR(199)\n);",
 			"metadata": {
 				"language": "sql"
 			},
