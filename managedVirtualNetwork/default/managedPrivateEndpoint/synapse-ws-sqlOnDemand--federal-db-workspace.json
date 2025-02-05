@@ -1,0 +1,10 @@
+{
+	"name": "synapse-ws-sqlOnDemand--federal-db-workspace",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/578ccf72-2f2c-45d2-847a-c3a154c2c031/resourceGroups/fedeco/providers/Microsoft.Synapse/workspaces/federal-db-workspace",
+		"groupId": "sqlOnDemand",
+		"fqdns": [
+			"federal-db-workspace-ondemand.a9a32d9b-a336-4e7f-82e2-24a9ac6ece3d.sql.azuresynapse.net"
+		]
+	}
+}

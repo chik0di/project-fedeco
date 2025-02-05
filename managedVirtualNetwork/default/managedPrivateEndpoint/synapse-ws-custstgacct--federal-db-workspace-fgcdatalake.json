@@ -1,0 +1,7 @@
+{
+	"name": "synapse-ws-custstgacct--federal-db-workspace-fgcdatalake",
+	"properties": {
+		"privateLinkResourceId": "/subscriptions/578ccf72-2f2c-45d2-847a-c3a154c2c031/resourceGroups/fedeco/providers/Microsoft.Storage/storageAccounts/fgcdatalake",
+		"groupId": "dfs"
+	}
+}

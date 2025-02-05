@@ -1,0 +1,17 @@
+{
+	"name": "queries",
+	"properties": {
+		"content": {
+			"query": "SELECT * FROM school",
+			"metadata": {
+				"language": "sql"
+			},
+			"currentConnection": {
+				"databaseName": "fgcsqlpool",
+				"poolName": "fgcsqlpool"
+			},
+			"resultLimit": 5000
+		},
+		"type": "SqlQuery"
+	}
+}
