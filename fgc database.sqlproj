@@ -9,8 +9,7 @@
     <ProjectGuid>{faac7ddd-9c5f-4505-b584-69eb07164672}</ProjectGuid>
     <DSP>Microsoft.Data.Tools.Schema.Sql.Sql160DatabaseSchemaProvider</DSP>
     <OutputType>Database</OutputType>
-    <RootPath>
-    </RootPath>
+    <RootPath />
     <RootNamespace>fgc_database</RootNamespace>
     <AssemblyName>fgc_database</AssemblyName>
     <ModelCollation>1033, CI</ModelCollation>
@@ -48,7 +47,6 @@
   </PropertyGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">11.0</VisualStudioVersion>
-    <!-- Default to the v11.0 targets path if the targets file for the current VS version is not found -->
     <SSDTExists Condition="Exists('$(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\SSDT\Microsoft.Data.Tools.Schema.SqlTasks.targets')">True</SSDTExists>
     <VisualStudioVersion Condition="'$(SSDTExists)' == ''">11.0</VisualStudioVersion>
   </PropertyGroup>
@@ -58,28 +56,24 @@
     <Folder Include="Properties" />
   </ItemGroup>
   <ItemGroup>
-    <Build Include="subject.sql" />
+    <Build Include="DimSubject.sql" />
     <Build Include="non_academic_staff_department.sql" />
     <Build Include="subject_department.sql" />
     <Build Include="teaching_staff.sql" />
     <Build Include="non_teaching_staff_role.sql" />
     <Build Include="non_teaching_staff.sql" />
-    <Build Include="hostel.sql" />
     <Build Include="staff.sql" />
     <Build Include="administrative_roles.sql" />
-    <Build Include="class.sql" />
-    <Build Include="term.sql" />
-    <Build Include="class_sub_division.sql" />
+    <Build Include="DimClass.sql" />
+    <Build Include="DimTerm.sql" />
     <Build Include="non_academic_staff_member.sql" />
-    <Build Include="student.sql" />
-    <Build Include="student_class.sql" />
-    <Build Include="student_performance.sql" />
-    <Build Include="student_type.sql" />
-    <Build Include="academic_year.sql" />
+    <Build Include="DimStudent.sql" />
+    <Build Include="DimAcademicYear.sql" />
     <Build Include="state.sql" />
     <Build Include="local_government_area.sql" />
-    <Build Include="school.sql" />
-    <Build Include="school_gender_type.sql" />
+    <Build Include="DimSchool.sql" />
+    <Build Include="FactStudentPerformance.sql" />
+    <Build Include="FactStudentSchool.sql" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="fgc database.refactorlog" />
