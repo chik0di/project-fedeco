@@ -1,8 +1,8 @@
-﻿﻿-----------------------------------------------
+﻿-----------------------------------------------
 ------INSERTING VALUES INTO THE TermDim TABLE-----
 -----------------------------------------------
 INSERT INTO TermDim (term)
-VALUES  ('1st'), ('2nd'), ('3rd');
+VALUES  ('First'), ('Second'), ('Third');
 
 
 -----------------------------------------------
@@ -26,10 +26,10 @@ VALUES
 
 
 --------------------------------------------------------------
------INSERTING VALUES INTO THE [subject_department] TABLE-----
+-----INSERTING VALUES INTO THE [SubjectDepartmentDim] TABLE-----
 --------------------------------------------------------------
 
-INSERT INTO subject_department
+INSERT INTO SubjectDepartmentDim
 (
 [name]
 )
@@ -44,48 +44,48 @@ VALUES
 
 INSERT INTO [subject]
 (
-[name], [subject_department_id]
+[name], [SubjectDepartmentDim_id]
 )
 VALUES  
-	('English Language', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('Literature-in-English', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('French', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('Igbo', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('Yoruba', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('Hausa', (SELECT id FROM subject_department WHERE name = 'Languages')),
-	('Further Mathematics', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Mathematics', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Physics', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Chemistry', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Biology', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Computer Science', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Agricultural Science', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Basic Science', (SELECT id FROM subject_department WHERE name = 'Sciences')),
-	('Commerce', (SELECT id FROM subject_department WHERE name = 'Commercial')),
-	('Financial Accounting', (SELECT id FROM subject_department WHERE name = 'Commercial')),
-	('Economics', (SELECT id FROM subject_department WHERE name = 'Commercial')),
-	('Business Studies', (SELECT id FROM subject_department WHERE name = 'Commercial')),
-	('Civic Education', (SELECT id FROM subject_department WHERE name = 'Social Sciences')),
-	('Religious Studies', (SELECT id FROM subject_department WHERE name = 'Social Sciences')),
-	('Government', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Geography', (SELECT id FROM subject_department WHERE name = 'Social Sciences')),
-	('Social Studies', (SELECT id FROM subject_department WHERE name = 'Social Sciences')),
-	('History', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Theatre Arts/Drama', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Fine Arts/Visual Arts', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Music', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Creative Writing', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Cultural and Creative Arts (CCA)', (SELECT id FROM subject_department WHERE name = 'Arts')),
-	('Food and Nutrition', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Home Economics', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Home Management', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Data Processing', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Clothing and Textiles', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Typing and Shorthand', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Carpentry and Woodwork', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Entrepreneurship Studies', (SELECT id FROM subject_department WHERE name = 'Vocational')),
-	('Basic Technology', (SELECT id FROM subject_department WHERE name = 'Engneering')),
-	('Technical Drawing', (SELECT id FROM subject_department WHERE name = 'Engneering'))
+	('English Language', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('Literature-in-English', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('French', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('Igbo', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('Yoruba', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('Hausa', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Languages')),
+	('Further Mathematics', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Mathematics', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Physics', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Chemistry', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Biology', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Computer Science', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Agricultural Science', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Basic Science', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Sciences')),
+	('Commerce', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Commercial')),
+	('Financial Accounting', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Commercial')),
+	('Economics', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Commercial')),
+	('Business Studies', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Commercial')),
+	('Civic Education', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Social Sciences')),
+	('Religious Studies', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Social Sciences')),
+	('Government', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Geography', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Social Sciences')),
+	('Social Studies', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Social Sciences')),
+	('History', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Theatre Arts/Drama', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Fine Arts/Visual Arts', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Music', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Creative Writing', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Cultural and Creative Arts (CCA)', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Arts')),
+	('Food and Nutrition', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Home Economics', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Home Management', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Data Processing', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Clothing and Textiles', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Typing and Shorthand', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Carpentry and Woodwork', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Entrepreneurship Studies', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Vocational')),
+	('Basic Technology', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Engneering')),
+	('Technical Drawing', (SELECT id FROM SubjectDepartmentDim WHERE name = 'Engneering'))
 ;
 
 -------------------------------------------------------------------------
