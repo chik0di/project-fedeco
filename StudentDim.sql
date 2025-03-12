@@ -7,7 +7,7 @@
     [last_name] NCHAR(90) NOT NULL, 
     [date_of_birth] DATE NOT NULL,
     [gender] NCHAR(1) NOT NULL,
-    [state_of_origin] INT NULL
-    CONSTRAINT [FK_DimStudent_DimState] FOREIGN KEY (state_of_origin) REFERENCES [StateDim]([id])
+    [state_id] INT NULL
+    CONSTRAINT [FK_DimStudent_DimState] FOREIGN KEY (state_id) REFERENCES [StateDim]([id])
 
 )
