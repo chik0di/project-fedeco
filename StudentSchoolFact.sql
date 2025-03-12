@@ -1,6 +1,7 @@
 ﻿CREATE TABLE [dbo].[StudentSchoolFact]
 (
-	[student_id] INT NOT NULL PRIMARY KEY, 
+	[record_id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
+    [student_id] UNIQUEIDENTIFIER NOT NULL,
     [school_id] INT NOT NULL,
 	[academic_year_of_admission] INT NOT NULL,
     [academic_year_finished] INT NULL,
