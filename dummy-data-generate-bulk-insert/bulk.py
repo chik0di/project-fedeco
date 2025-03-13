@@ -40,9 +40,9 @@ def insert_dummy_staff(num_records):
         "icloud.com", "protonmail.com", "zoho.com", "gmx.com", "mail.com",
         "yandex.com", "fastmail.com"
         ]
-        email = first_name + last_name + str(random.randint(100,9999)) + "@" + random.choice(domains)
+        email = first_name.lower() + last_name.lower() + str(random.randint(100,9999)) + "@" + random.choice(domains)
 
-        # Insert data into StaffDimTable
+        # Insert data into StaffDim
         query = """
         INSERT INTO StaffDim (first_name, middle_name, last_name, date_of_birth, gender, state_id, phone_number, email_address)
         VALUES (?, ?, ?, ?, ?, ?, ?, ?);
