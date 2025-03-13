@@ -1,7 +1,7 @@
 ﻿CREATE TABLE [dbo].[StudentPerformanceFact]
     (
 	[id] INT PRIMARY KEY IDENTITY(1,1) NOT NULL, 
-    [student_id] VARCHAR(30) NOT NULL, 
+    [student_id] UNIQUEIDENTIFIER NOT NULL, 
     [class_id] INT NOT NULL, 
     [term_id] INT NOT NULL, 
     [subject_id] INT NOT NULL, 
