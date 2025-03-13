@@ -7,8 +7,8 @@
     [last_name] VARCHAR(50) NOT NULL, 
     [date_of_birth] DATE NOT NULL, 
     [gender] NCHAR(1) NOT NULL, 
-    [state_id] INT NULL,
-    [phone_number] INT NOT NULL, 
+    [state_id] INT NOT NULL,
+    [phone_number] NCHAR(11) NOT NULL, 
     [email_address] VARCHAR(70) UNIQUE NOT NULL
     CONSTRAINT [FK_StaffDim_DimState] FOREIGN KEY (state_id) REFERENCES [StateDim]([id])
 )
