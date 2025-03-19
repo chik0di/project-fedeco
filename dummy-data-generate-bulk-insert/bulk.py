@@ -49,7 +49,6 @@ def insert_staff(num_records):
         """
         cursor.execute(query, (first_name, middle_name, last_name, date_of_birth, gender, state_id, phone_number, email))
 
-    # Commit transaction
     conn.commit()
     print(f"Successfully inserted {num_records} staff records into StaffDimTable.")
 
@@ -140,7 +139,7 @@ def insert_staff_school():
 
 
 def insert_student(how_many):
-    for _ in range(num_records):
+    for _ in range(how_many):
 
         gender = random.choice(["M", "F"])
         if gender == "M":
@@ -159,7 +158,10 @@ def insert_student(how_many):
         INSERT INTO StudentDim (first_name, middle_name, last_name, date_of_birth, gender, state_id)
         VALUES (?,?,?,?,?,?)
         """
-        cursor.execute
+        cursor.execute(query, (first_name, middle_name, last_name, date_of_birth, gender, state_id))
+
+    conn.commit()
+    print(f"Successfully inserted {how_many} student records into StudentDim.")
 
 
 
@@ -175,7 +177,7 @@ def insert_student(how_many):
 
 insert_staff(10)
 insert_staff_school()
-insert_student(how_many)
+insert_student(80)
 
 # Close connection
 cursor.close()
