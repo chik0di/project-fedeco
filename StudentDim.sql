@@ -7,7 +7,13 @@
     [last_name] NCHAR(90) NOT NULL, 
     [date_of_birth] DATE NOT NULL,
     [gender] NCHAR(1) NOT NULL,
-    [state_id] INT NULL
-    CONSTRAINT [FK_DimStudent_DimState] FOREIGN KEY (state_id) REFERENCES [StateDim]([id])
+    [address] TEXT NOT NULL,
+    [state_of_origin] INT NOT NULL,
+    [sponsor_name] VARCHAR(50) NOT NULL,
+    [sponsor_phone] VARCHAR(11) NOT NULL,
+    [sponsor_address] TEXT,
+    [sponsor_email_address] VARCHAR(30),
+    [additional_notes] TEXT
+    CONSTRAINT [FK_DimStudent_DimState] FOREIGN KEY (state_of_origin) REFERENCES [StateDim]([id])
 
 )
