@@ -16,13 +16,14 @@ VALUES  ('Junior Secondary School 1','JSS1'), ('Junior Secondary School 2','JSS2
 -------------------------------------------------------------------
 ---- INSERTING VALUES INTO THE [NonTeachingDim] TABLE ----
 -------------------------------------------------------------------
-INSERT INTO [NonTeachingDim]  
+INSERT INTO [NonTeachingDim]
 	( 
 		[name]
 		)
 VALUES	
 	('Librarian'), ('Registrar'), ('Laboratory Technician and Assistant'), ('Guidance Counselor'), ('ICT Support Staff'), ('Examination Officer'), 
-  ('Records Officer'), ('Kitchen'), ('Security'), ('Utility'), ('Cleaning'), ('Office Assistant'), ('Driver'), ('Electrician');
+  ('Records Officer'), ('Kitchen'), ('Security'), ('Utility'), ('Cleaning'), ('Office Assistant'), ('Driver'), ('Electrician'), ('Vice Principal (Administration)'), 
+  ('Vice Principal (Academics)'),	('Vice Principal (Special Duties)'), ('Principal');
 
 
 --------------------------------------------------------------
@@ -89,17 +90,28 @@ VALUES
 ;
 
 -------------------------------------------------------------------------
-------- INSERTING VALUES INTO THE [administrative_roles] TABLE ----------
+------- INSERTING VALUES INTO THE [EmploymentTypeDim] TABLE ----------
 -------------------------------------------------------------------------
 
-INSERT INTO [administrative_roles]
+INSERT INTO [EmploymentTypeDim]
 	(
-		[name]
+		[id], [employment_type]
 		)
 VALUES 
-	('Principal'),
-	('Vice Principal (Administration)'),
-	('Vice Principal (Academics)'),
-	('Vice Principal (Special Duties)'),
-	('PTA Executive'),
-	('Head of Department');
+	(1, 'Federal Worker'),
+	(2, 'School Employee'),
+	(3, 'PTA Staff');
+
+
+-------------------------------------------------------------------------
+------- INSERTING VALUES INTO THE [ExpenseCategoryDim] TABLE ----------
+-------------------------------------------------------------------------
+
+INSERT INTO [ExpenseCategoryDim]
+	(
+		[expense_category]
+		)
+VALUES 
+	('Federal Employee'),
+	('School Staff'),
+	('PTA');
