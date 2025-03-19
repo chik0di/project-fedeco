@@ -5,8 +5,9 @@
 	[employment_type_id] INT NOT NULL,
 	[subject_id] INT NULL,
 	[non_teaching_role_id] INT NULL,
-	[date_started] DATE NOT NULL DEFAULT CURRENT_TIMESTAMP,
+	[hire_date] DATE NOT NULL,
     [until_date] DATE NULL,
+	[created_at] DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL
 	CONSTRAINT [FK_subject_id] FOREIGN KEY ([subject_id]) REFERENCES [SubjectDim]([subject_id]),
 	CONSTRAINT [FK_non_teaching_role_id] FOREIGN KEY ([non_teaching_role_id]) REFERENCES [NonTeachingDim]([id])
 )
