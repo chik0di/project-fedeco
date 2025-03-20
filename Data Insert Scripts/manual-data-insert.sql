@@ -1,4 +1,23 @@
 ﻿-----------------------------------------------
+------INSERTING VALUES INTO THE AcademicYearDim TABLE-----
+-----------------------------------------------
+DECLARE @startYear INT = 1980;
+DECLARE @endYear INT = 2025;
+
+WHILE @startYear < @endYear
+BEGIN
+    INSERT INTO AcademicYearDim (session, start_date, end_date)
+    VALUES (
+        CAST(@startYear AS VARCHAR) + '/' + CAST(@startYear + 1 AS VARCHAR), 
+        CAST(@startYear AS VARCHAR) + '-09-01', 
+        CAST(@startYear + 1 AS VARCHAR) + '-07-31' 
+    );
+
+    SET @startYear = @startYear + 1;
+END;
+
+
+-----------------------------------------------
 ------INSERTING VALUES INTO THE TermDim TABLE-----
 -----------------------------------------------
 INSERT INTO TermDim (term)
@@ -22,7 +41,7 @@ INSERT INTO [NonTeachingDim]
 		)
 VALUES	
 	('Librarian'), ('Registrar'), ('Laboratory Technician and Assistant'), ('Guidance Counselor'), ('ICT Support Staff'), ('Examination Officer'), 
-  ('Records Officer'), ('Kitchen'), ('Security'), ('Utility'), ('Cleaning'), ('Office Assistant'), ('Driver'), ('Electrician'), ('Vice Principal (Administration)'), 
+  ('Records Officer'), ('Kitchen Staff'), ('Security Staff'), ('Utility'), ('Cleaning Staff'), ('Office Assistant'), ('Driver'), ('Electrician'), ('Vice Principal (Administration)'), 
   ('Vice Principal (Academics)'),	('Vice Principal (Special Duties)'), ('Principal');
 
 
