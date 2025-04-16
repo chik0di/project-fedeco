@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/.vs/proUnitate
+/Import Script Logs
+proUnitate.sln
+proUnitate.sqlproj
+proUnitate.sqlproj.user
+/obj/Debug
