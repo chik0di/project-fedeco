@@ -36,9 +36,8 @@ def insert_dummy_staff(num_records):
 
         state_id = random.randint(1,37)
 
-        domains = [ "gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "aol.com",
-        "icloud.com", "protonmail.com", "zoho.com", "gmx.com", "mail.com",
-        "yandex.com", "fastmail.com"
+        domains = [ 
+            "gmail.com", "yahoo.com", "outlook.com", "hotmail.com", "icloud.com"
         ]
         email = first_name.lower() + last_name.lower() + str(random.randint(100,9999)) + "@" + random.choice(domains)
 
