@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[FundingExpenseJunctionFact]
+﻿CREATE TABLE [warehouse].[FundingExpenseJunctionFact]
 (
 	[Id] INT NOT NULL PRIMARY KEY, 
     [school_funding_id] INT NOT NULL,

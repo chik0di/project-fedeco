@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[AcademicYearDim]
+﻿CREATE TABLE [warehouse].[AcademicYearDim]
 (
 	[id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
     [session] NCHAR(10) UNIQUE NOT NULL, 

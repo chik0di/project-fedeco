@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StudentDim]
+﻿CREATE TABLE [warehouse].[StudentDim]
 (   
     [record_id] INT PRIMARY KEY IDENTITY(1,1),
 	[student_id] UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL UNIQUE, 

@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[SchoolDim]
+﻿CREATE TABLE [warehouse].[SchoolDim]
 (
 	[school_id] INT NOT NULL PRIMARY KEY, 
     [full_name] NCHAR(131) NOT NULL, 

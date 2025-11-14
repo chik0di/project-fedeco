@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StaffDim]
+﻿CREATE TABLE [warehouse].[StaffDim]
 (
 	[record_id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
     [staff_id] UNIQUEIDENTIFIER DEFAULT NEWID() NOT NULL UNIQUE,

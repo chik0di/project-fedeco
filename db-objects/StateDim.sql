@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StateDim]
+﻿CREATE TABLE [warehouse].[StateDim]
 (
 	[id] INT NOT NULL PRIMARY KEY, 
     [state] NCHAR(50) NOT NULL UNIQUE, 

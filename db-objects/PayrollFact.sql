@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[PayrollFact]
+﻿CREATE TABLE [warehouse].[PayrollFact]
 (
 	[staff_id] INT NOT NULL, 
     [school_id] NCHAR(10) NOT NULL,

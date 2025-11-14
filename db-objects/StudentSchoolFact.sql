@@ -1,4 +1,4 @@
-﻿CREATE TABLE [dbo].[StudentSchoolFact]
+﻿CREATE TABLE [warehouse].[StudentSchoolFact]
 (
 	[record_id] INT NOT NULL PRIMARY KEY IDENTITY(1,1), 
     [student_id] UNIQUEIDENTIFIER NOT NULL,
