@@ -12,5 +12,4 @@
     [phone_number] NCHAR(11) NOT NULL, 
     [email_address] VARCHAR(30) UNIQUE NOT NULL,
     [additional_notes] TEXT
-    CONSTRAINT [FK_StaffDim_DimState] FOREIGN KEY (state_of_origin) REFERENCES [StateDim]([id])
 )

@@ -14,6 +14,4 @@
     [sponsor_address] TEXT,
     [sponsor_email_address] VARCHAR(30),
     [additional_notes] TEXT
-    CONSTRAINT [FK_DimStudent_DimState] FOREIGN KEY (state_of_origin) REFERENCES [StateDim]([id])
-
 )
